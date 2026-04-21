@@ -3,10 +3,12 @@
 import { motion } from "framer-motion";
 import { Download, Mail, Terminal, Link as LinkIcon } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations('Hero');
+  const locale = useLocale();
   return (
     <section id="home" className="pt-20 pb-8 min-h-[calc(100vh-80px)] flex flex-col justify-center">
       {/* 1. Tech Banner Container */}
@@ -36,12 +38,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8">
-            <button className="px-6 py-3 bg-accent text-accent-foreground font-bold rounded-lg flex items-center gap-2 hover:bg-accent/90 transition-all shadow-lg shadow-accent/20">
+            <Link href={`/${locale}/cv`} className="px-6 py-3 bg-accent text-accent-foreground font-bold rounded-lg flex items-center gap-2 hover:bg-accent/90 transition-all shadow-lg shadow-accent/20">
               <Download size={18} /> {t('downloadCV')}
-            </button>
-            <button className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 transition-all">
+            </Link>
+            <a href="#contact" className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 transition-all">
               {t('contact')}
-            </button>
+            </a>
           </div>
 
           {/* Social Icons */}

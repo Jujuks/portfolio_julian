@@ -62,3 +62,35 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* CV Aesthetics */
+.noise-bg {
+  position: relative;
+  background-color: #e5e5e5;
+}
+
+.noise-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 10;
+  background-image: url("https://www.transparenttextures.com/patterns/recycled-paper-texture.png");
+  pointer-events: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  @page {
+    margin: 0;
+    size: auto;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
