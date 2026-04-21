@@ -38,7 +38,7 @@ export default function ProjectGrid() {
   return (
     <section id="projects" className="py-24 px-6 max-w-7xl mx-auto w-full">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold mb-4 text-[#1E293B]">Projectos Destacados</h2>
+        <h2 className="text-4xl font-extrabold mb-4 text-foreground">Projectos Destacados</h2>
         <p className="text-muted-foreground max-w-3xl mx-auto">
           Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.
         </p>
@@ -52,7 +52,7 @@ export default function ProjectGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group bg-white rounded-[32px] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all"
+            className="group bg-card rounded-[32px] overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all"
           >
             {/* Colored Header */}
             <div className={`h-48 md:h-56 ${project.headerColor} flex items-center justify-center text-6xl`}>
@@ -60,20 +60,20 @@ export default function ProjectGrid() {
             </div>
             
             <div className="p-10">
-              <h3 className="text-2xl font-bold mb-4 text-[#1E293B]">{project.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-card-foreground">{project.title}</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map(tag => (
-                  <span key={tag} className="text-[11px] font-bold text-violet-500 bg-violet-50 px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  <span key={tag} className="text-[11px] font-bold text-violet-500 bg-accent/10 px-3 py-1.5 rounded-full uppercase tracking-wider">
                     {tag}
                   </span>
                 ))}
               </div>
               
               <div className="flex gap-4">
-                <button className="flex-1 py-3.5 bg-[#1E293B] text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-black transition-colors">
+                <button className="flex-1 py-3.5 bg-foreground text-background font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-foreground/90 transition-colors">
                   <Code size={18} /> GitHub
                 </button>
-                <button className="flex-1 py-3.5 bg-[#7C3AED] text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-[#6D28D9] transition-colors">
+                <button className="flex-1 py-3.5 bg-accent text-accent-foreground font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-accent/90 transition-colors">
                   <ExternalLink size={18} /> Live Demo
                 </button>
               </div>

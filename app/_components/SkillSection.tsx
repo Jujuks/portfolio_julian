@@ -64,10 +64,10 @@ const skillCategories = [
 
 export default function SkillSection() {
   return (
-    <section id="skills" className="py-24 px-6 bg-slate-50 overflow-hidden">
+    <section id="skills" className="py-24 px-6 bg-muted/50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-[#1E293B]">Tecnologías y Habilidades</h2>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Tecnologías y Habilidades</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto italic">
             Tecnologías y herramientas que utilizo para dar vida a las ideas.
           </p>
@@ -81,29 +81,29 @@ export default function SkillSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="p-8 bg-white rounded-[32px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+              className="p-8 bg-card rounded-[32px] border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 bg-violet-50 text-violet-600 rounded-lg">
+                <div className="p-2 bg-accent/10 text-accent rounded-lg">
                   <category.icon size={20} />
                 </div>
-                <h3 className="text-lg font-bold text-[#1E293B]">{category.title}</h3>
+                <h3 className="text-lg font-bold text-card-foreground">{category.title}</h3>
               </div>
 
               <div className="space-y-6">
                 {category.skills.map(skill => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-bold text-slate-700">{skill.name}</span>
-                      <span className="text-[10px] font-bold text-slate-400">{skill.level}%</span>
+                      <span className="text-sm font-bold text-card-foreground">{skill.name}</span>
+                      <span className="text-[10px] font-bold text-muted-foreground">{skill.level}%</span>
                     </div>
-                    <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+                    <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="h-full bg-[#7C3AED] rounded-full"
+                        className="h-full bg-accent rounded-full"
                       />
                     </div>
                   </div>

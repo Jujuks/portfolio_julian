@@ -5,10 +5,10 @@ import { Mail, Phone, MapPin, Terminal, Link as LinkIcon, Share2, Send } from "l
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-white">
+    <section id="contact" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-[#1E293B]">Contactame</h2>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Contactame</h2>
           <p className="text-muted-foreground">¿Tienes algún proyecto en mente o te gustaría colaborar? ¡No dudes en contactarme</p>
         </div>
 
@@ -18,7 +18,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 bg-[#7C3AED] rounded-[32px] p-10 text-white flex flex-col justify-between"
+            className="lg:col-span-2 bg-accent rounded-[32px] p-10 text-accent-foreground flex flex-col justify-between"
           >
             <div>
               <h3 className="text-2xl font-bold mb-10">Informacion de Contacto</h3>
@@ -82,44 +82,44 @@ export default function Contact() {
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Tu Nombre</label>
+                  <label className="block text-sm font-bold text-foreground mb-2">Tu Nombre</label>
                   <input 
                     type="text" 
                     placeholder="........." 
-                    className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
+                    className="w-full px-6 py-4 bg-muted/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Tu email</label>
+                  <label className="block text-sm font-bold text-foreground mb-2">Tu email</label>
                   <input 
                     type="email" 
                     placeholder="........." 
-                    className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
+                    className="w-full px-6 py-4 bg-muted/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Proyecto</label>
+                <label className="block text-sm font-bold text-foreground mb-2">Proyecto</label>
                 <input 
                   type="text" 
                   placeholder="........." 
-                  className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
+                  className="w-full px-6 py-4 bg-muted/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Mensaje</label>
+                <label className="block text-sm font-bold text-foreground mb-2">Mensaje</label>
                 <textarea 
                   rows={6}
                   placeholder="........." 
-                  className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium resize-none"
+                  className="w-full px-6 py-4 bg-muted/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all font-medium resize-none"
                 />
               </div>
 
               <button 
                 type="submit" 
-                className="px-8 py-4 bg-[#7C3AED] text-white font-bold rounded-xl flex items-center gap-2 hover:bg-[#6D28D9] transition-all shadow-lg shadow-violet-200"
+                className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl flex items-center gap-2 hover:bg-accent/90 transition-all shadow-lg shadow-accent/20"
               >
                 <Send size={18} /> Enviar Mensaje
               </button>

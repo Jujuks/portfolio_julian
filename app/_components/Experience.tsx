@@ -44,18 +44,18 @@ const experienceItems = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-6 bg-slate-50">
+    <section id="experience" className="py-24 px-6 bg-muted/50">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-[#1E293B]">Experiencia</h2>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Experiencia</h2>
           <p className="text-muted-foreground">Mi experiencia academica</p>
         </div>
 
         <div className="flex items-center gap-4 mb-12">
-          <div className="w-10 h-10 bg-violet-100 text-accent rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-accent/20 text-accent rounded-lg flex items-center justify-center">
             <GraduationCap size={20} />
           </div>
-          <h3 className="text-xl font-bold text-[#1E293B]">Experiencia Academica</h3>
+          <h3 className="text-xl font-bold text-foreground">Experiencia Academica</h3>
         </div>
 
         <div className="relative border-l-2 border-violet-200 ml-5 space-y-12 pb-12">
@@ -69,18 +69,18 @@ export default function Experience() {
               className="relative pl-10"
             >
               {/* Dot */}
-              <div className="absolute top-0 -left-[11px] w-5 h-5 bg-violet-500 rounded-full border-4 border-white shadow-sm" />
+              <div className="absolute top-0 -left-[11px] w-5 h-5 bg-violet-500 rounded-full border-4 border-background shadow-sm" />
               
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+              <div className="bg-card p-8 rounded-2xl shadow-sm border border-border hover:shadow-md transition-shadow">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
                   <h4 className="text-lg font-bold text-violet-600">{item.title}</h4>
                   <span className="text-sm font-medium text-muted-foreground">{item.date}</span>
                 </div>
-                <p className="text-[#1E293B] font-bold mb-4">{item.institution}</p>
+                <p className="text-card-foreground font-bold mb-4">{item.institution}</p>
                 <ul className="space-y-3">
                   {item.details.map((detail, idx) => (
-                    <li key={idx} className="text-sm text-slate-500 flex items-start gap-2">
-                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0" />
+                    <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/30 flex-shrink-0" />
                        {detail}
                     </li>
                   ))}

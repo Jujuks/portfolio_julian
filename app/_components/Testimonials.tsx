@@ -29,10 +29,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 px-6 bg-slate-50">
+    <section id="testimonials" className="py-24 px-6 bg-muted/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-[#1E293B]">Testimonios</h2>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Testimonios</h2>
           <p className="text-muted-foreground">Lo que dicen mis compañeros y clientes sobre trabajar conmigo.</p>
         </div>
 
@@ -44,16 +44,16 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm relative overflow-hidden group hover:shadow-lg transition-shadow"
+              className="bg-card p-8 rounded-[32px] border border-border shadow-sm relative overflow-hidden group hover:shadow-lg transition-shadow"
             >
-              <Quote className="absolute top-6 right-8 text-violet-100 group-hover:text-violet-200 transition-colors" size={60} />
+              <Quote className="absolute top-6 right-8 text-accent/10 group-hover:text-accent/20 transition-colors" size={60} />
               
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-violet-100 text-[#7C3AED] rounded-full flex items-center justify-center font-bold">
+                <div className="w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center font-bold">
                   {testimonial.initials}
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1E293B]">{testimonial.name}</h4>
+                  <h4 className="font-bold text-card-foreground">{testimonial.name}</h4>
                   <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-sm text-slate-500 leading-relaxed italic">
+              <p className="text-sm text-muted-foreground leading-relaxed italic">
                 "{testimonial.content}"
               </p>
             </motion.div>
