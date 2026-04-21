@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Download, Mail, Terminal, Link as LinkIcon } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
   return (
     <section id="home" className="pt-20 pb-8 min-h-[calc(100vh-80px)] flex flex-col justify-center">
       {/* 1. Tech Banner Container */}
@@ -22,25 +24,23 @@ export default function Hero() {
       {/* 2. Profile Section */}
       <div id="about" className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-5xl font-extrabold mb-2 text-foreground">Hola soy Julian Mera</h1>
-          <h2 className="text-xl font-bold text-foreground mb-6">Estudiante Ingenieria de Software</h2>
+          <h1 className="text-5xl font-extrabold mb-2 text-foreground">{t('greeting')}</h1>
+          <h2 className="text-xl font-bold text-foreground mb-6">{t('subtitle')}</h2>
           
           <div className="flex items-center gap-2 text-muted-foreground mb-8">
-            <span className="text-sm">📍 Pasto, Colombia</span>
+            <span className="text-sm">📍 {t('location')}</span>
           </div>
 
-          <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
-            Soy un desarrollador Frontend, enfocado en construir interfaces de usuario limpias y escalables. 
-            Mi objetivo es cerrar la brecha entre el diseño visual en Figma y la implementación técnica en código real.
-            Cuando no estoy programando en TypeScript o ajustando clases en Tailwind, disfruto investigar nuevas tendencias de UI/UX para asegurar que mis proyectos siempre se destaquen.
+          <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg text-justify">
+            {t('description')}
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8">
             <button className="px-6 py-3 bg-accent text-accent-foreground font-bold rounded-lg flex items-center gap-2 hover:bg-accent/90 transition-all shadow-lg shadow-accent/20">
-              <Download size={18} /> Descargar CV
+              <Download size={18} /> {t('downloadCV')}
             </button>
             <button className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 transition-all">
-              Ponte en Contacto
+              {t('contact')}
             </button>
           </div>
 

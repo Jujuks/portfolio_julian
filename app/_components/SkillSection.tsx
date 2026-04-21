@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Laptop, Palette, Database, Cloud, BarChart, Settings } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 const skillCategories = [
   { 
@@ -63,13 +64,15 @@ const skillCategories = [
 ];
 
 export default function SkillSection() {
+  const t = useTranslations('SkillSection');
+
   return (
     <section id="skills" className="py-24 px-6 bg-muted/50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Tecnologías y Habilidades</h2>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">{t('title')}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto italic">
-            Tecnologías y herramientas que utilizo para dar vida a las ideas.
+            {t('subtitle')}
           </p>
         </div>
 

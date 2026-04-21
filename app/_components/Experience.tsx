@@ -2,60 +2,63 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
-
-const experienceItems = [
-  {
-    title: "Educacion Superior (Actual)",
-    date: "2023-Presente",
-    institution: "Universidad Cooperativa de Colombia (UCC)",
-    details: [
-      "Titulo: Ingeniero de Software",
-      "Descripcion: Aprendizaje activo de frameworks modernos como Next.js y React. Manejo de bases de datos y logica de programacion."
-    ]
-  },
-  {
-    title: "Educacion Tecnologica",
-    date: "2020-2023",
-    institution: "Universidad de Nariño (UDENAR)",
-    details: [
-      "Titulo: Promotor de la Salud",
-      "Descripcion: Aprendizaje activo de atencion basica primaria en salud. Manejo de comunidades y estrategias de enseñanza."
-    ]
-  },
-  {
-    title: "Educacion Secundaria",
-    date: "2007-2020",
-    institution: "Escuela Normal Superior de Pasto (ENSUP)",
-    details: [
-      "Titulo: Bachiller Academico",
-      "Descripcion: Participacion en proyectos institucionales de tecnologia. Desarrollo de habilidades de comunicacion y trabajo en equipo."
-    ]
-  },
-  {
-    title: "Certificaciones y Cursos complementarios",
-    date: "2023-Presente",
-    institution: "Talento Tech",
-    details: [
-      "Titulo: Programacion Basica",
-      "Descripcion: Capacitacion en lenguajes de programacion. Logica basica de programacion."
-    ]
-  }
-];
+import { useTranslations } from 'next-intl';
 
 export default function Experience() {
+  const t = useTranslations('Experience');
+
+  const experienceItems = [
+    {
+      title: t('higherEd'),
+      date: "2023-Presente",
+      institution: "Universidad Cooperativa de Colombia (UCC)",
+      details: [
+        t('higherEdDegree'),
+        t('higherEdDesc')
+      ]
+    },
+    {
+      title: t('techEd'),
+      date: "2020-2023",
+      institution: "Universidad de Nariño (UDENAR)",
+      details: [
+        t('techEdDegree'),
+        t('techEdDesc')
+      ]
+    },
+    {
+      title: t('highSchool'),
+      date: "2007-2020",
+      institution: "Escuela Normal Superior de Pasto (ENSUP)",
+      details: [
+        t('highSchoolDegree'),
+        t('highSchoolDesc')
+      ]
+    },
+    {
+      title: t('certifications'),
+      date: "2023-Presente",
+      institution: "Talento Tech",
+      details: [
+        t('certificationsDegree'),
+        t('certificationsDesc')
+      ]
+    }
+  ];
+
   return (
     <section id="experience" className="py-24 px-6 bg-muted/50">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Experiencia</h2>
-          <p className="text-muted-foreground">Mi experiencia academica</p>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">{t('title')}</h2>
+          <p className="text-muted-foreground">{t('subtitle')}</p>
         </div>
 
         <div className="flex items-center gap-4 mb-12">
           <div className="w-10 h-10 bg-accent/20 text-accent rounded-lg flex items-center justify-center">
             <GraduationCap size={20} />
           </div>
-          <h3 className="text-xl font-bold text-foreground">Experiencia Academica</h3>
+          <h3 className="text-xl font-bold text-foreground">{t('academicTitle')}</h3>
         </div>
 
         <div className="relative border-l-2 border-violet-200 ml-5 space-y-12 pb-12">

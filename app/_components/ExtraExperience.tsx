@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 const extraSkills = [
   "Responsive Design", "Performance Optimization", "Accessibility (a11y)",
@@ -10,10 +11,12 @@ const extraSkills = [
 ];
 
 export default function ExtraExperience() {
+  const t = useTranslations('ExtraExperience');
+
   return (
     <section id="extra" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto bg-card rounded-[32px] border border-border p-12 shadow-sm">
-        <h2 className="text-3xl font-extrabold text-center mb-16 text-foreground">Experiencia Adicional</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-16 text-foreground">{t('title')}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {extraSkills.map((skill, index) => (
             <motion.div

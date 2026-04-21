@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 const testimonials = [
   {
@@ -28,12 +29,14 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const t = useTranslations('Testimonials');
+
   return (
     <section id="testimonials" className="py-24 px-6 bg-muted/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 text-foreground">Testimonios</h2>
-          <p className="text-muted-foreground">Lo que dicen mis compañeros y clientes sobre trabajar conmigo.</p>
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">{t('title')}</h2>
+          <p className="text-muted-foreground">{t('subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

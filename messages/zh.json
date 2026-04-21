@@ -1,0 +1,66 @@
+{
+  "Navbar": {
+    "home": "首页",
+    "experience": "经历",
+    "skills": "技能",
+    "projects": "项目",
+    "contact": "联系",
+    "language": "语言"
+  },
+  "Hero": {
+    "greeting": "你好，我是 Julian Mera",
+    "subtitle": "软件工程学生",
+    "location": "Pasto, 哥伦比亚",
+    "description": "我是一名前端开发者，专注于构建整洁且可扩展的用户界面。我的目标是消除Figma视觉设计与实际代码技术实现之间的差距。当我不使用TypeScript编程或调整Tailwind类时，我喜欢研究新的UI/UX趋势，以确保我的项目始终脱颖而出。",
+    "downloadCV": "下载简历",
+    "contact": "联系我"
+  },
+  "Experience": {
+    "title": "经历",
+    "subtitle": "我的学术经历",
+    "academicTitle": "学术经历",
+    "higherEd": "高等教育 (当前)",
+    "higherEdDegree": "学位：软件工程",
+    "higherEdDesc": "积极学习现代框架如Next.js和React。数据库管理和编程逻辑。",
+    "techEd": "技术教育",
+    "techEdDegree": "学位：健康促进员",
+    "techEdDesc": "积极学习基础初级卫生保健。社区管理和教学策略。",
+    "highSchool": "中等教育",
+    "highSchoolDegree": "学位：学术学士",
+    "highSchoolDesc": "参与机构技术项目。培养沟通和团队合作能力。",
+    "certifications": "认证和进修课程",
+    "certificationsDegree": "学位：基础编程",
+    "certificationsDesc": "编程语言培训。基础编程逻辑。"
+  },
+  "SkillSection": {
+    "title": "技术与技能",
+    "subtitle": "我用来将创意变为现实的技术和工具。"
+  },
+  "ExtraExperience": {
+    "title": "其他经历"
+  },
+  "ProjectGrid": {
+    "title": "精选项目",
+    "subtitle": "展示我近期的工作和个人项目，展现我的技术专长和解决问题的能力。",
+    "github": "GitHub",
+    "demo": "在线演示"
+  },
+  "Testimonials": {
+    "title": "评价",
+    "subtitle": "我的同事和客户对我工作的评价。"
+  },
+  "Contact": {
+    "title": "联系我",
+    "subtitle": "有项目想法或者想合作？请随时联系我",
+    "infoTitle": "联系方式",
+    "nameLabel": "您的姓名",
+    "emailLabel": "您的邮箱",
+    "projectLabel": "项目",
+    "messageLabel": "留言",
+    "sendButton": "发送消息",
+    "namePlaceholder": ".........",
+    "emailPlaceholder": ".........",
+    "projectPlaceholder": ".........",
+    "messagePlaceholder": "........."
+  }
+}

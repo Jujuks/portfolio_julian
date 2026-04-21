@@ -1,0 +1,66 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm Julian Mera",
+    "subtitle": "Software Engineering Student",
+    "location": "Pasto, Colombia",
+    "description": "I am a Frontend developer focused on building clean and scalable user interfaces. My goal is to bridge the gap between visual design in Figma and technical implementation in real code. When I'm not coding in TypeScript or adjusting Tailwind classes, I enjoy researching new UI/UX trends to ensure my projects always stand out.",
+    "downloadCV": "Download CV",
+    "contact": "Get in Touch"
+  },
+  "Experience": {
+    "title": "Experience",
+    "subtitle": "My academic experience",
+    "academicTitle": "Academic Experience",
+    "higherEd": "Higher Education (Current)",
+    "higherEdDegree": "Degree: Software Engineer",
+    "higherEdDesc": "Active learning of modern frameworks like Next.js and React. Database management and programming logic.",
+    "techEd": "Technological Education",
+    "techEdDegree": "Degree: Health Promoter",
+    "techEdDesc": "Active learning of basic primary health care. Community management and teaching strategies.",
+    "highSchool": "Secondary Education",
+    "highSchoolDegree": "Degree: Academic Bachelor",
+    "highSchoolDesc": "Participation in institutional technology projects. Development of communication and teamwork skills.",
+    "certifications": "Certifications and Complementary Courses",
+    "certificationsDegree": "Degree: Basic Programming",
+    "certificationsDesc": "Training in programming languages. Basic programming logic."
+  },
+  "SkillSection": {
+    "title": "Technologies and Skills",
+    "subtitle": "Technologies and tools I use to bring ideas to life."
+  },
+  "ExtraExperience": {
+    "title": "Additional Experience"
+  },
+  "ProjectGrid": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of my recent work and personal projects demonstrating my technical expertise and problem-solving skills.",
+    "github": "GitHub",
+    "demo": "Live Demo"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What my colleagues and clients say about working with me."
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "subtitle": "Have a project in mind or would like to collaborate? Don't hesitate to contact me",
+    "infoTitle": "Contact Information",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "projectLabel": "Project",
+    "messageLabel": "Message",
+    "sendButton": "Send Message",
+    "namePlaceholder": ".........",
+    "emailPlaceholder": ".........",
+    "projectPlaceholder": ".........",
+    "messagePlaceholder": "........."
+  }
+}

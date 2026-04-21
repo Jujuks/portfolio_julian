@@ -2,45 +2,48 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Code } from "lucide-react";
-
-const projects = [
-  {
-    title: "Sistema de Semaforo Inteligente",
-    description: "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
-    tags: ["Python", "IoT", "Data Analysis", "Real-time Systems", "Urban Planning"],
-    icon: "🚦",
-    headerColor: "bg-green-50",
-  },
-  {
-    title: "Marketplace para estudiantes",
-    description: "Una plataforma para que los estudiantes compren y vendan libros, materiales y servicios dentro de la comunidad universitaria.",
-    tags: ["ArchiMate", "AI/ML", "System Architecture", "Next.js", "TypeScript"],
-    icon: "🤖",
-    headerColor: "bg-purple-50",
-  },
-  {
-    title: "Calculadora de variables",
-    description: "Herramienta avanzada para el procesamiento de datos estadísticos y visualización de variables complejas.",
-    tags: ["R", "Statistics", "Data Visualization", "ggplot2", "Data Science"],
-    icon: "📊",
-    headerColor: "bg-yellow-50",
-  },
-  {
-    title: "Monitor de procesos",
-    description: "Visualizador en tiempo real de los procesos del sistema y el uso de recursos, optimizando el rendimiento.",
-    tags: ["Python", "Linear Algebra", "Differential Equations", "NumPy", "Matplotlib"],
-    icon: "🔢",
-    headerColor: "bg-blue-50",
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function ProjectGrid() {
+  const t = useTranslations('ProjectGrid');
+
+  const projects = [
+    {
+      title: "Sistema de Semaforo Inteligente",
+      description: "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
+      tags: ["Python", "IoT", "Data Analysis", "Real-time Systems", "Urban Planning"],
+      icon: "🚦",
+      headerColor: "bg-green-50",
+    },
+    {
+      title: "Marketplace para estudiantes",
+      description: "Una plataforma para que los estudiantes compren y vendan libros, materiales y servicios dentro de la comunidad universitaria.",
+      tags: ["ArchiMate", "AI/ML", "System Architecture", "Next.js", "TypeScript"],
+      icon: "🤖",
+      headerColor: "bg-purple-50",
+    },
+    {
+      title: "Calculadora de variables",
+      description: "Herramienta avanzada para el procesamiento de datos estadísticos y visualización de variables complejas.",
+      tags: ["R", "Statistics", "Data Visualization", "ggplot2", "Data Science"],
+      icon: "📊",
+      headerColor: "bg-yellow-50",
+    },
+    {
+      title: "Monitor de procesos",
+      description: "Visualizador en tiempo real de los procesos del sistema y el uso de recursos, optimizando el rendimiento.",
+      tags: ["Python", "Linear Algebra", "Differential Equations", "NumPy", "Matplotlib"],
+      icon: "🔢",
+      headerColor: "bg-blue-50",
+    },
+  ];
+
   return (
     <section id="projects" className="py-24 px-6 max-w-7xl mx-auto w-full">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold mb-4 text-foreground">Projectos Destacados</h2>
+        <h2 className="text-4xl font-extrabold mb-4 text-foreground">{t('title')}</h2>
         <p className="text-muted-foreground max-w-3xl mx-auto">
-          Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.
+          {t('subtitle')}
         </p>
       </div>
 
@@ -71,10 +74,10 @@ export default function ProjectGrid() {
               
               <div className="flex gap-4">
                 <button className="flex-1 py-3.5 bg-foreground text-background font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-foreground/90 transition-colors">
-                  <Code size={18} /> GitHub
+                  <Code size={18} /> {t('github')}
                 </button>
                 <button className="flex-1 py-3.5 bg-accent text-accent-foreground font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-accent/90 transition-colors">
-                  <ExternalLink size={18} /> Live Demo
+                  <ExternalLink size={18} /> {t('demo')}
                 </button>
               </div>
             </div>

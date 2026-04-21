@@ -1,0 +1,66 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "Hero": {
+    "greeting": "Hola soy Julian Mera",
+    "subtitle": "Estudiante Ingenieria de Software",
+    "location": "Pasto, Colombia",
+    "description": "Soy un desarrollador Frontend, enfocado en construir interfaces de usuario limpias y escalables. Mi objetivo es cerrar la brecha entre el diseño visual en Figma y la implementación técnica en código real. Cuando no estoy programando en TypeScript o ajustando clases en Tailwind, disfruto investigar nuevas tendencias de UI/UX para asegurar que mis proyectos siempre se destaquen.",
+    "downloadCV": "Descargar CV",
+    "contact": "Ponte en Contacto"
+  },
+  "Experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi experiencia academica",
+    "academicTitle": "Experiencia Academica",
+    "higherEd": "Educacion Superior (Actual)",
+    "higherEdDegree": "Titulo: Ingeniero de Software",
+    "higherEdDesc": "Aprendizaje activo de frameworks modernos como Next.js y React. Manejo de bases de datos y logica de programacion.",
+    "techEd": "Educacion Tecnologica",
+    "techEdDegree": "Titulo: Promotor de la Salud",
+    "techEdDesc": "Aprendizaje activo de atencion basica primaria en salud. Manejo de comunidades y estrategias de enseñanza.",
+    "highSchool": "Educacion Secundaria",
+    "highSchoolDegree": "Titulo: Bachiller Academico",
+    "highSchoolDesc": "Participacion en proyectos institucionales de tecnologia. Desarrollo de habilidades de comunicacion y trabajo en equipo.",
+    "certifications": "Certificaciones y Cursos complementarios",
+    "certificationsDegree": "Titulo: Programacion Basica",
+    "certificationsDesc": "Capacitacion en lenguajes de programacion. Logica basica de programacion."
+  },
+  "SkillSection": {
+    "title": "Tecnologías y Habilidades",
+    "subtitle": "Tecnologías y herramientas que utilizo para dar vida a las ideas."
+  },
+  "ExtraExperience": {
+    "title": "Experiencia Adicional"
+  },
+  "ProjectGrid": {
+    "title": "Projectos Destacados",
+    "subtitle": "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
+    "github": "GitHub",
+    "demo": "Live Demo"
+  },
+  "Testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen mis compañeros y clientes sobre trabajar conmigo."
+  },
+  "Contact": {
+    "title": "Contactame",
+    "subtitle": "¿Tienes algún proyecto en mente o te gustaría colaborar? ¡No dudes en contactarme",
+    "infoTitle": "Informacion de Contacto",
+    "nameLabel": "Tu Nombre",
+    "emailLabel": "Tu email",
+    "projectLabel": "Proyecto",
+    "messageLabel": "Mensaje",
+    "sendButton": "Enviar Mensaje",
+    "namePlaceholder": ".........",
+    "emailPlaceholder": ".........",
+    "projectPlaceholder": ".........",
+    "messagePlaceholder": "........."
+  }
+}
