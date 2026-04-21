@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 import { ThemeProvider } from "../_components/ThemeProvider";
+import ScrollToTop from "../_components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Julián | Frontend Developer Portfolio",
@@ -54,6 +55,7 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider messages={messages}>
             {children}
+            <ScrollToTop />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
