@@ -83,9 +83,9 @@ export default function CVPage() {
                </div>
                
                <div className="relative z-10 flex flex-col items-center md:items-start md:flex-row gap-8">
-                  <div className="w-48 h-64 bg-slate-200 border-4 border-black shrink-0 relative overflow-hidden grayscale contrast-125">
+                  <div className="w-48 h-64 bg-slate-200 border-4 border-black shrink-0 relative overflow-hidden contrast-125">
                     <Image
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
+                      src="/images/profile.jpeg"
                       alt="Julian Mera"
                       fill
                       className="object-cover"

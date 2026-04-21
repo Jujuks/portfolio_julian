@@ -38,7 +38,7 @@ export default function Hero() {
         className="w-full h-[180px] mb-8 overflow-hidden bg-muted border-b border-border relative"
       >
         <Image
-          src=""
+          src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=2070"
           alt="Tech Banner"
           fill
           className="object-cover opacity-80"
@@ -119,10 +119,10 @@ export default function Hero() {
               className="relative w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-[40px] overflow-hidden border-8 border-background shadow-2xl z-10"
             >
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
+                src="/images/profile.jpeg"
                 alt="Portrait"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover hover:scale-105 transition-all duration-700"
               />
             </motion.div>
             {/* Background Shape */}
