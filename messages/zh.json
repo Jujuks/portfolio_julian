@@ -45,7 +45,33 @@
     "title": "精选项目",
     "subtitle": "展示我近期的工作和个人项目，展现我的技术专长和解决问题的能力。",
     "github": "GitHub",
-    "demo": "在线演示"
+    "demo": "在线演示",
+    "projects": [
+      {
+        "title": "Mercado Libre 克隆",
+        "description": "具有产品列表、搜索和购物车功能的电子商务平台克隆。",
+        "githubUrl": "https://github.com/valeriaucc/mercadolibre-clon/tree/dev",
+        "liveDemoUrl": "https://mercadolibre-clon-5.vercel.app/"
+      },
+      {
+        "title": "学生市场",
+        "description": "大学生交换学术资源和服务的综合平台。",
+        "githubUrl": "https://github.com/Whatfck/UniShop-frontend",
+        "liveDemoUrl": "https://uni-shop-frontend.vercel.app/"
+      },
+      {
+        "title": "变量计算器",
+        "description": "用于变量处理和统计数据可视化的先进数学工具。",
+        "githubUrl": "https://github.com/SebastianBolivar01/Calculadora17proMax/tree/main/calculo-visual",
+        "liveDemoUrl": "https://calculadora17pro-max.vercel.app/"
+      },
+      {
+        "title": "持续集成",
+        "description": "展示现代软件交付实践的自动化 CI/CD 流水线项目。",
+        "githubUrl": "https://github.com/SebastianBolivar01/integracion-continua",
+        "liveDemoUrl": "https://integracion-continua-t7c1.vercel.app/"
+      }
+    ]
   },
   "Testimonials": {
     "title": "评价",

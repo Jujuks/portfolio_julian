@@ -3,40 +3,39 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Code } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function ProjectGrid() {
   const t = useTranslations('ProjectGrid');
+  const projectsData = t.raw('projects');
 
-  const projects = [
+  const projectUI = [
     {
-      title: "Sistema de Semaforo Inteligente",
-      description: "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
-      tags: ["Python", "IoT", "Data Analysis", "Real-time Systems", "Urban Planning"],
-      icon: "🚦",
-      headerColor: "bg-green-50",
-    },
-    {
-      title: "Marketplace para estudiantes",
-      description: "Una plataforma para que los estudiantes compren y vendan libros, materiales y servicios dentro de la comunidad universitaria.",
-      tags: ["ArchiMate", "AI/ML", "System Architecture", "Next.js", "TypeScript"],
-      icon: "🤖",
-      headerColor: "bg-purple-50",
-    },
-    {
-      title: "Calculadora de variables",
-      description: "Herramienta avanzada para el procesamiento de datos estadísticos y visualización de variables complejas.",
-      tags: ["R", "Statistics", "Data Visualization", "ggplot2", "Data Science"],
-      icon: "📊",
+      tags: ["React", "CSS", "E-commerce", "JavaScript", "Responsive"],
+      image: "/images/projects/mercadolibre.png",
       headerColor: "bg-yellow-50",
     },
     {
-      title: "Monitor de procesos",
-      description: "Visualizador en tiempo real de los procesos del sistema y el uso de recursos, optimizando el rendimiento.",
-      tags: ["Python", "Linear Algebra", "Differential Equations", "NumPy", "Matplotlib"],
-      icon: "🔢",
+      tags: ["Next.js", "TypeScript", "Tailwind", "Firebase", "Marketplace"],
+      image: "/images/projects/unishop.png",
+      headerColor: "bg-purple-50",
+    },
+    {
+      tags: ["React", "Charts.js", "Statistics", "Mathematics", "UI/UX"],
+      image: "/images/projects/calculator.png",
+      headerColor: "bg-green-50",
+    },
+    {
+      tags: ["GitHub Actions", "Docker", "DevOps", "Node.js", "CI/CD"],
+      image: "/images/projects/ci_cd.png",
       headerColor: "bg-blue-50",
     },
   ];
+
+  const projects = projectsData.map((project: any, index: number) => ({
+    ...project,
+    ...projectUI[index]
+  }));
 
   return (
     <section id="projects" className="py-24 px-6 max-w-7xl mx-auto w-full">
@@ -48,7 +47,7 @@ export default function ProjectGrid() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {projects.map((project, index) => (
+        {projects.map((project: any, index: number) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 20 }}
@@ -57,15 +56,24 @@ export default function ProjectGrid() {
             transition={{ delay: index * 0.1 }}
             className="group bg-card rounded-[32px] overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all"
           >
-            {/* Colored Header */}
-            <div className={`h-48 md:h-56 ${project.headerColor} flex items-center justify-center text-6xl`}>
-              {project.icon}
+            {/* Project Image Header */}
+            <div className={`relative h-48 md:h-64 overflow-hidden ${project.headerColor}`}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
             </div>
             
             <div className="p-10">
               <h3 className="text-2xl font-bold mb-4 text-card-foreground">{project.title}</h3>
+              <p className="text-muted-foreground mb-6 line-clamp-2">
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-2 mb-8">
-                {project.tags.map(tag => (
+                {project.tags.map((tag: string) => (
                   <span key={tag} className="text-[11px] font-bold text-violet-500 bg-accent/10 px-3 py-1.5 rounded-full uppercase tracking-wider">
                     {tag}
                   </span>
@@ -73,12 +81,22 @@ export default function ProjectGrid() {
               </div>
               
               <div className="flex gap-4">
-                <button className="flex-1 py-3.5 bg-foreground text-background font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-foreground/90 transition-colors">
+                <a 
+                  href={project.githubUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3.5 bg-foreground text-background font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-foreground/90 transition-colors"
+                >
                   <Code size={18} /> {t('github')}
-                </button>
-                <button className="flex-1 py-3.5 bg-accent text-accent-foreground font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-accent/90 transition-colors">
+                </a>
+                <a 
+                  href={project.liveDemoUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3.5 bg-accent text-accent-foreground font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-accent/90 transition-colors"
+                >
                   <ExternalLink size={18} /> {t('demo')}
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

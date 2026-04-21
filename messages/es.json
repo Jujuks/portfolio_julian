@@ -45,7 +45,33 @@
     "title": "Projectos Destacados",
     "subtitle": "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
     "github": "GitHub",
-    "demo": "Live Demo"
+    "demo": "Live Demo",
+    "projects": [
+      {
+        "title": "Mercado Libre Clon",
+        "description": "Clon de la plataforma de e-commerce con listado de productos, búsqueda y carrito de compras.",
+        "githubUrl": "https://github.com/valeriaucc/mercadolibre-clon/tree/dev",
+        "liveDemoUrl": "https://mercadolibre-clon-5.vercel.app/"
+      },
+      {
+        "title": "Marketplace para estudiantes",
+        "description": "Plataforma integral para que estudiantes universitarios intercambien recursos académicos y servicios.",
+        "githubUrl": "https://github.com/Whatfck/UniShop-frontend",
+        "liveDemoUrl": "https://uni-shop-frontend.vercel.app/"
+      },
+      {
+        "title": "Calculadora de variables",
+        "description": "Herramienta matemática avanzada para el procesamiento de variables y visualización de datos estadísticos.",
+        "githubUrl": "https://github.com/SebastianBolivar01/Calculadora17proMax/tree/main/calculo-visual",
+        "liveDemoUrl": "https://calculadora17pro-max.vercel.app/"
+      },
+      {
+        "title": "Integracion Continua",
+        "description": "Proyecto de pipeline de CI/CD automatizado que demuestra prácticas modernas de entrega de software.",
+        "githubUrl": "https://github.com/SebastianBolivar01/integracion-continua",
+        "liveDemoUrl": "https://integracion-continua-t7c1.vercel.app/"
+      }
+    ]
   },
   "Testimonials": {
     "title": "Testimonios",
