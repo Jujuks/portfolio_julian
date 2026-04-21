@@ -82,9 +82,10 @@ export default function SkillSection() {
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5, scale: 1.02 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="p-8 bg-card rounded-[32px] border border-border shadow-sm hover:shadow-md transition-shadow"
+              className="p-8 bg-card rounded-[32px] border border-border shadow-sm hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 bg-accent/10 text-accent rounded-lg">

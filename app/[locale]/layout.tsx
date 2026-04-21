@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 
 import { ThemeProvider } from "../_components/ThemeProvider";
 import ScrollToTop from "../_components/ScrollToTop";
+import ProgressBar from "../_components/ProgressBar";
 
 export const metadata: Metadata = {
   title: "Julián | Frontend Developer Portfolio",
@@ -54,6 +55,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
+            <ProgressBar />
             {children}
             <ScrollToTop />
           </NextIntlClientProvider>

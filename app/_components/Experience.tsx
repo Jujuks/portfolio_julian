@@ -82,10 +82,17 @@ export default function Experience() {
                 <p className="text-card-foreground font-bold mb-4">{item.institution}</p>
                 <ul className="space-y-3">
                   {item.details.map((detail, idx) => (
-                    <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/30 flex-shrink-0" />
+                    <motion.li 
+                      key={idx} 
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: (index * 0.1) + (idx * 0.1) + 0.3 }}
+                      className="text-sm text-muted-foreground flex items-start gap-2"
+                    >
+                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-violet-500/30 flex-shrink-0" />
                        {detail}
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>

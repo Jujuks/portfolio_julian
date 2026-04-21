@@ -52,9 +52,10 @@ export default function ProjectGrid() {
             key={project.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -10 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group bg-card rounded-[32px] overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all"
+            className="group bg-card rounded-[32px] overflow-hidden border border-border shadow-sm hover:shadow-2xl transition-all duration-300"
           >
             {/* Project Image Header */}
             <div className={`relative h-48 md:h-64 overflow-hidden ${project.headerColor}`}>
@@ -62,7 +63,7 @@ export default function ProjectGrid() {
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
             </div>
@@ -73,10 +74,17 @@ export default function ProjectGrid() {
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mb-8">
-                {project.tags.map((tag: string) => (
-                  <span key={tag} className="text-[11px] font-bold text-violet-500 bg-accent/10 px-3 py-1.5 rounded-full uppercase tracking-wider">
+                {project.tags.map((tag: string, tagIdx: number) => (
+                  <motion.span 
+                    key={tag} 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: (index * 0.1) + (tagIdx * 0.05) + 0.3 }}
+                    className="text-[11px] font-bold text-violet-500 bg-accent/10 px-3 py-1.5 rounded-full uppercase tracking-wider hover:bg-accent hover:text-white transition-colors cursor-default"
+                  >
                     {tag}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
               
