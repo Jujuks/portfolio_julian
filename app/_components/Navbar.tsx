@@ -28,6 +28,8 @@ export default function Navbar() {
     { name: t('experience'), href: "#experience" },
     { name: t('skills'), href: "#skills" },
     { name: t('projects'), href: "#projects" },
+    { name: t('testimonials'), href: "#testimonials" },
+    { name: t('extra'), href: "#extra" },
     { name: t('contact'), href: "#contact" },
   ];
 
