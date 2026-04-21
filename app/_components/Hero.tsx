@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-24 pb-16">
+    <section id="home" className="pt-20 pb-8 min-h-[calc(100vh-80px)] flex flex-col justify-center">
       {/* 1. Tech Banner Container */}
-      <div className="w-full h-[300px] mb-12 overflow-hidden bg-slate-100 border-b border-border relative">
+      <div className="w-full h-[180px] mb-8 overflow-hidden bg-slate-100 border-b border-border relative">
         <Image 
           src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070" 
           alt="Tech Banner"
@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-[300px] h-[300px] rounded-2xl overflow-hidden border-8 border-white shadow-2xl">
+          <div className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border-8 border-white shadow-2xl">
             <Image 
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
               alt="Portrait"
