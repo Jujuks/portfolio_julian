@@ -11,8 +11,8 @@ export default function Hero() {
     <section id="home" className="pt-20 pb-8 min-h-[calc(100vh-80px)] flex flex-col justify-center">
       {/* 1. Tech Banner Container */}
       <div className="w-full h-[180px] mb-8 overflow-hidden bg-muted border-b border-border relative">
-        <Image 
-          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070" 
+        <Image
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070"
           alt="Tech Banner"
           fill
           className="object-cover opacity-80"
@@ -26,7 +26,7 @@ export default function Hero() {
         <div>
           <h1 className="text-5xl font-extrabold mb-2 text-foreground">{t('greeting')}</h1>
           <h2 className="text-xl font-bold text-foreground mb-6">{t('subtitle')}</h2>
-          
+
           <div className="flex items-center gap-2 text-muted-foreground mb-8">
             <span className="text-sm">📍 {t('location')}</span>
           </div>
@@ -46,13 +46,13 @@ export default function Hero() {
 
           {/* Social Icons */}
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 bg-foreground text-background rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+            <a href="https://github.com/Jujuks" className="w-10 h-10 bg-foreground text-background rounded-full flex items-center justify-center hover:scale-110 transition-transform">
               <Terminal size={20} />
             </a>
-            <a href="#" className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+            <a href="https://www.linkedin.com/feed/" className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
               <LinkIcon size={20} />
             </a>
-            <a href="#" className="w-10 h-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+            <a href="#contact" className="w-10 h-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center hover:scale-110 transition-transform">
               <Mail size={20} />
             </a>
           </div>
@@ -60,8 +60,8 @@ export default function Hero() {
 
         <div className="flex justify-center md:justify-end">
           <div className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border-8 border-background shadow-2xl">
-            <Image 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
+            <Image
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
               alt="Portrait"
               fill
               className="object-cover grayscale"
