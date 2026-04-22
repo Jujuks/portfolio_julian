@@ -59,20 +59,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-12">
-              <p className="text-xs font-bold opacity-70 uppercase tracking-widest mb-4">Follow Me</p>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-lg flex items-center justify-center transition-colors">
-                  <Terminal size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-lg flex items-center justify-center transition-colors">
-                  <LinkIcon size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-lg flex items-center justify-center transition-colors">
-                  <Share2 size={18} />
-                </a>
-              </div>
-            </div>
+
           </motion.div>
 
           {/* Form */}
