@@ -71,25 +71,20 @@ export default function Footer() {
               onClick={scrollToTop}
               className="w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all mb-8"
             >
-              <ArrowUp size={24} />
-            </motion.button>
-            <p className="text-xs text-muted-foreground text-left md:text-right">
-              {currentYear} © {t('rights')}
-            </p>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-             <span>Inspired by simplicity</span>
-             <span className="w-1 h-1 bg-muted-foreground/30 rounded-full" />
-             <span>Built with Next.js</span>
-          </div>
-          <div className="flex items-center gap-1 text-xs text-muted-foreground">
-            {t('madeWith')} <Heart size={12} className="text-red-500 fill-red-500" />
-          </div>
+            <ArrowUp size={24} />
+          </motion.button>
         </div>
       </div>
-    </footer>
+
+      <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-xs text-muted-foreground">
+          {currentYear} © {t('rights')}
+        </p>
+        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+          {t('madeWith')} <Heart size={12} className="text-red-500 fill-red-500" />
+        </div>
+      </div>
+    </div>
+  </footer>
   );
 }
