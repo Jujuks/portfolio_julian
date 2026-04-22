@@ -21,15 +21,15 @@ export default function Contact() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 bg-accent rounded-[32px] p-10 text-accent-foreground flex flex-col justify-between"
+            className="lg:col-span-2 bg-accent rounded-[32px] p-10 text-accent-foreground flex flex-col justify-center"
           >
-            <div>
-              <h3 className="text-2xl font-bold mb-10">{t('infoTitle')}</h3>
+            <div className="flex flex-col items-center">
+              <h3 className="text-2xl font-bold mb-12 text-center w-full">{t('infoTitle')}</h3>
               
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="mt-1">
-                    <Mail size={20} />
+              <div className="space-y-10 w-full flex flex-col items-center">
+                <div className="flex flex-col items-center text-center gap-3">
+                  <div className="p-3 bg-white/10 rounded-2xl">
+                    <Mail size={24} />
                   </div>
                   <div>
                     <p className="text-xs font-bold opacity-70 uppercase tracking-widest mb-1">Email</p>
@@ -37,9 +37,9 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="mt-1">
-                    <Phone size={20} />
+                <div className="flex flex-col items-center text-center gap-3">
+                  <div className="p-3 bg-white/10 rounded-2xl">
+                    <Phone size={24} />
                   </div>
                   <div>
                     <p className="text-xs font-bold opacity-70 uppercase tracking-widest mb-1">Phone</p>
@@ -47,9 +47,9 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="mt-1">
-                    <MapPin size={20} />
+                <div className="flex flex-col items-center text-center gap-3">
+                  <div className="p-3 bg-white/10 rounded-2xl">
+                    <MapPin size={24} />
                   </div>
                   <div>
                     <p className="text-xs font-bold opacity-70 uppercase tracking-widest mb-1">Location</p>
@@ -58,8 +58,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
-
           </motion.div>
 
           {/* Form */}
