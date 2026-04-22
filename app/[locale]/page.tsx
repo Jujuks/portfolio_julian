@@ -6,6 +6,7 @@ import Testimonials from "../_components/Testimonials";
 import SkillSection from "../_components/SkillSection";
 import ExtraExperience from "../_components/ExtraExperience";
 import Contact from "../_components/Contact";
+import Footer from "../_components/Footer";
 
 import PageWrapper from "../_components/PageWrapper";
 
@@ -22,6 +23,7 @@ export default function Home() {
           <SkillSection />
           <ExtraExperience />
           <Contact />
+          <Footer />
         </PageWrapper>
       </main>
     </div>

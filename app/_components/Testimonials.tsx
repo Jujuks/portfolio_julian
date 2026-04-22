@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl';
 
 const testimonials = [
   {
-    initials: "DR",
-    name: "Diego Rodriguez",
+    initials: "NZ",
+    name: "Natalia Zambrano",
     role: "Fullstack Developer",
     content: "Excelente compañero de equipo, siempre dispuesto a ayudar y con una gran capacidad para resolver problemas técnicos complejos.",
     rating: 5,
@@ -50,7 +50,7 @@ export default function Testimonials() {
               className="bg-card p-8 rounded-[32px] border border-border shadow-sm relative overflow-hidden group hover:shadow-lg transition-shadow"
             >
               <Quote className="absolute top-6 right-8 text-accent/10 group-hover:text-accent/20 transition-colors" size={60} />
-              
+
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center font-bold">
                   {testimonial.initials}

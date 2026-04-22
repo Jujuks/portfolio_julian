@@ -90,5 +90,11 @@
     "emailPlaceholder": ".........",
     "projectPlaceholder": ".........",
     "messagePlaceholder": "........."
+  },
+  "Footer": {
+    "rights": "版权所有。",
+    "links": "快速链接",
+    "social": "社交媒体",
+    "madeWith": "由 Julian Mera 用 ❤️ 制作"
   }
 }

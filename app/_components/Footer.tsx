@@ -1,42 +1,101 @@
-import { Mail, Link, ExternalLink, Camera } from "lucide-react";
+"use client";
+
+import { motion } from "framer-motion";
+import { Terminal, Link as LinkIcon, Mail, Heart, ArrowUp } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
-  return (
-    <footer id="contact" className="py-24 px-6 border-t border-border/50">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8">¿Hablamos?</h2>
-        <p className="text-muted-foreground max-w-xl mb-12 text-lg">
-          Actualmente estoy buscando prácticas profesionales o proyectos freelance. 
-          Si tienes una idea o simplemente quieres saludar, mi buzón está abierto.
-        </p>
-        
-        <a 
-          href="mailto:julian@example.com" 
-          className="px-10 py-5 bg-accent text-accent-foreground font-bold rounded-2xl hover:scale-105 transition-transform mb-16 shadow-lg shadow-accent/20"
-        >
-          Enviar Mensaje
-        </a>
+  const t = useTranslations('Footer');
+  const navT = useTranslations('Navbar');
 
-        <div className="flex gap-8 mb-16">
-          {[
-            { icon: ExternalLink, href: "#" },
-            { icon: Link, href: "#" },
-            { icon: Mail, href: "#" },
-            { icon: Camera, href: "#" },
-          ].map((social, i) => (
-            <a 
-              key={i} 
-              href={social.href} 
-              className="p-3 glass rounded-xl text-muted-foreground hover:text-foreground hover:bg-white/10 transition-all"
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-card pt-16 pb-8 border-t border-border">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          {/* Brand Section */}
+          <div className="md:col-span-2 space-y-6">
+            <h2 className="text-3xl font-black tracking-tighter text-foreground">
+              JM<span className="text-accent">.</span>
+            </h2>
+            <p className="text-muted-foreground max-w-sm leading-relaxed">
+              {t('madeWith')}
+            </p>
+            <div className="flex gap-4">
+              <motion.a 
+                whileHover={{ y: -5 }}
+                href="https://github.com/Jujuks" 
+                target="_blank" 
+                className="w-10 h-10 bg-accent/10 text-accent rounded-xl flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+              >
+                <Terminal size={20} />
+              </motion.a>
+              <motion.a 
+                whileHover={{ y: -5 }}
+                href="https://www.linkedin.com/feed/" 
+                target="_blank" 
+                className="w-10 h-10 bg-accent/10 text-accent rounded-xl flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+              >
+                <LinkIcon size={20} />
+              </motion.a>
+              <motion.a 
+                whileHover={{ y: -5 }}
+                href="#contact" 
+                className="w-10 h-10 bg-accent/10 text-accent rounded-xl flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+              >
+                <Mail size={20} />
+              </motion.a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-bold text-foreground mb-6 uppercase tracking-wider text-sm">{t('links')}</h3>
+            <ul className="space-y-4">
+              {['home', 'experience', 'projects', 'contact'].map((link) => (
+                <li key={link}>
+                  <a 
+                    href={`#${link}`} 
+                    className="text-muted-foreground hover:text-accent transition-colors text-sm"
+                  >
+                    {navT(link)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact / Back to top */}
+          <div className="flex flex-col items-start md:items-end">
+             <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={scrollToTop}
+              className="w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all mb-8"
             >
-              <social.icon size={24} />
-            </a>
-          ))}
+              <ArrowUp size={24} />
+            </motion.button>
+            <p className="text-xs text-muted-foreground text-left md:text-right">
+              {currentYear} © {t('rights')}
+            </p>
+          </div>
         </div>
 
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Julián. Hecho con Next.js y mucho café.
-        </p>
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+             <span>Inspired by simplicity</span>
+             <span className="w-1 h-1 bg-muted-foreground/30 rounded-full" />
+             <span>Built with Next.js</span>
+          </div>
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            {t('madeWith')} <Heart size={12} className="text-red-500 fill-red-500" />
+          </div>
+        </div>
       </div>
     </footer>
   );

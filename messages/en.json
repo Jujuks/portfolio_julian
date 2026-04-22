@@ -90,5 +90,11 @@
     "emailPlaceholder": ".........",
     "projectPlaceholder": ".........",
     "messagePlaceholder": "........."
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "links": "Quick Links",
+    "social": "Social Media",
+    "madeWith": "Made with ❤️ by Julian Mera"
   }
 }
