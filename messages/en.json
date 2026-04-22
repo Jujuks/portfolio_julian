@@ -10,6 +10,7 @@
     "language": "Language"
   },
   "Hero": {
+    "welcome": "Welcome to my portfolio",
     "greeting": "Hi, I'm Julian Mera",
     "subtitle": "Software Engineering Student",
     "location": "Pasto, Colombia",
@@ -79,22 +80,22 @@
   },
   "Contact": {
     "title": "Contact Me",
-    "subtitle": "Have a project in mind or would like to collaborate? Don't hesitate to contact me",
+    "subtitle": "Have a project in mind or would like to collaborate? Don't hesitate to contact me!",
     "infoTitle": "Contact Information",
     "nameLabel": "Your Name",
     "emailLabel": "Your Email",
     "projectLabel": "Project",
     "messageLabel": "Message",
     "sendButton": "Send Message",
-    "namePlaceholder": ".........",
-    "emailPlaceholder": ".........",
-    "projectPlaceholder": ".........",
-    "messagePlaceholder": "........."
+    "namePlaceholder": "Write your name...",
+    "emailPlaceholder": "your@email.com",
+    "projectPlaceholder": "Type of project...",
+    "messagePlaceholder": "Tell me more about your idea..."
   },
   "Footer": {
     "rights": "All rights reserved.",
     "links": "Quick Links",
     "social": "Social Media",
-    "madeWith": "Made with ❤️ by Julian Mera"
+    "madeWith": "Made with ❤️ by Julián Mera"
   }
 }

@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="space-y-6">
           <motion.div variants={itemVariants}>
             <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-xs font-bold rounded-full uppercase tracking-widest mb-3">
-              Welcome to my portfolio
+              {t('welcome')}
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-3 text-foreground tracking-tighter leading-tight">
               {t('greeting')}
@@ -99,7 +99,7 @@ export default function Hero() {
               className="relative w-[300px] h-[400px] md:w-[450px] md:h-[600px] rounded-[60px] overflow-hidden border-8 border-background shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] z-10"
             >
               <Image
-                src="/images/profile2.jpeg"
+                src="/images/profile3.jpeg"
                 alt="Portrait"
                 fill
                 className="object-cover hover:scale-105 transition-all duration-1000"

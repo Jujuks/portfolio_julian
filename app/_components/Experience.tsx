@@ -18,6 +18,15 @@ export default function Experience() {
       ]
     },
     {
+      title: t('certifications'),
+      date: "2023-Presente",
+      institution: "Talento Tech",
+      details: [
+        t('certificationsDegree'),
+        t('certificationsDesc')
+      ]
+    },
+    {
       title: t('techEd'),
       date: "2020-2023",
       institution: "Universidad de Nariño (UDENAR)",
@@ -33,15 +42,6 @@ export default function Experience() {
       details: [
         t('highSchoolDegree'),
         t('highSchoolDesc')
-      ]
-    },
-    {
-      title: t('certifications'),
-      date: "2023-Presente",
-      institution: "Talento Tech",
-      details: [
-        t('certificationsDegree'),
-        t('certificationsDesc')
       ]
     }
   ];

@@ -10,29 +10,30 @@
     "language": "Idioma"
   },
   "Hero": {
-    "greeting": "Hola soy Julian Mera",
-    "subtitle": "Estudiante Ingenieria de Software",
+    "welcome": "Bienvenido a mi portafolio",
+    "greeting": "Hola, soy Julián Mera",
+    "subtitle": "Estudiante de Ingeniería de Software",
     "location": "Pasto, Colombia",
-    "description": "Soy un desarrollador Frontend, enfocado en construir interfaces de usuario limpias y escalables. Mi objetivo es cerrar la brecha entre el diseño visual en Figma y la implementación técnica en código real. Cuando no estoy programando en TypeScript o ajustando clases en Tailwind, disfruto investigar nuevas tendencias de UI/UX para asegurar que mis proyectos siempre se destaquen.",
+    "description": "Soy un desarrollador Frontend enfocado en construir interfaces de usuario limpias y escalables. Mi objetivo es cerrar la brecha entre el diseño visual en Figma y la implementación técnica en código real. Cuando no estoy programando en TypeScript o ajustando clases en Tailwind, disfruto investigar nuevas tendencias de UI/UX para asegurar que mis proyectos siempre se destaquen.",
     "downloadCV": "Descargar CV",
-    "contact": "Ponte en Contacto"
+    "contact": "Ponte en contacto"
   },
   "Experience": {
     "title": "Experiencia",
-    "subtitle": "Mi experiencia academica",
-    "academicTitle": "Experiencia Academica",
-    "higherEd": "Educacion Superior (Actual)",
-    "higherEdDegree": "Titulo: Ingeniero de Software",
-    "higherEdDesc": "Aprendizaje activo de frameworks modernos como Next.js y React. Manejo de bases de datos y logica de programacion.",
-    "techEd": "Educacion Tecnologica",
-    "techEdDegree": "Titulo: Promotor de la Salud",
-    "techEdDesc": "Aprendizaje activo de atencion basica primaria en salud. Manejo de comunidades y estrategias de enseñanza.",
-    "highSchool": "Educacion Secundaria",
-    "highSchoolDegree": "Titulo: Bachiller Academico",
-    "highSchoolDesc": "Participacion en proyectos institucionales de tecnologia. Desarrollo de habilidades de comunicacion y trabajo en equipo.",
-    "certifications": "Certificaciones y Cursos complementarios",
-    "certificationsDegree": "Titulo: Programacion Basica",
-    "certificationsDesc": "Capacitacion en lenguajes de programacion. Logica basica de programacion."
+    "subtitle": "Mi trayectoria académica",
+    "academicTitle": "Experiencia Académica",
+    "higherEd": "Educación Superior (Actual)",
+    "higherEdDegree": "Título: Ingeniero de Software",
+    "higherEdDesc": "Aprendizaje activo de frameworks modernos como Next.js y React. Manejo de bases de datos y lógica de programación.",
+    "techEd": "Educación Tecnológica",
+    "techEdDegree": "Título: Promotor de la Salud",
+    "techEdDesc": "Aprendizaje activo de atención básica primaria en salud. Manejo de comunidades y estrategias de enseñanza.",
+    "highSchool": "Educación Secundaria",
+    "highSchoolDegree": "Título: Bachiller Académico",
+    "highSchoolDesc": "Participación en proyectos institucionales de tecnología. Desarrollo de habilidades de comunicación y trabajo en equipo.",
+    "certifications": "Certificaciones y cursos complementarios",
+    "certificationsDegree": "Título: Programación Básica",
+    "certificationsDesc": "Capacitación en lenguajes de programación. Lógica básica de programación."
   },
   "SkillSection": {
     "title": "Tecnologías y Habilidades",
@@ -42,10 +43,10 @@
     "title": "Experiencia Adicional"
   },
   "ProjectGrid": {
-    "title": "Projectos Destacados",
+    "title": "Proyectos Destacados",
     "subtitle": "Una muestra de mis trabajos recientes y proyectos personales que demuestran mi experiencia técnica y mis habilidades para la resolución de problemas.",
     "github": "GitHub",
-    "demo": "Live Demo",
+    "demo": "Demo en vivo",
     "projects": [
       {
         "title": "Mercado Libre Clon",
@@ -54,19 +55,19 @@
         "liveDemoUrl": "https://mercadolibre-clon-5.vercel.app/"
       },
       {
-        "title": "Marketplace para estudiantes",
+        "title": "Marketplace para Estudiantes",
         "description": "Plataforma integral para que estudiantes universitarios intercambien recursos académicos y servicios.",
         "githubUrl": "https://github.com/Whatfck/UniShop-frontend",
         "liveDemoUrl": "https://uni-shop-frontend.vercel.app/"
       },
       {
-        "title": "Calculadora de variables",
+        "title": "Calculadora de Variables",
         "description": "Herramienta matemática avanzada para el procesamiento de variables y visualización de datos estadísticos.",
         "githubUrl": "https://github.com/SebastianBolivar01/Calculadora17proMax/tree/main/calculo-visual",
         "liveDemoUrl": "https://calculadora17pro-max.vercel.app/"
       },
       {
-        "title": "Integracion Continua",
+        "title": "Integración Continua",
         "description": "Proyecto de pipeline de CI/CD automatizado que demuestra prácticas modernas de entrega de software.",
         "githubUrl": "https://github.com/SebastianBolivar01/integracion-continua",
         "liveDemoUrl": "https://integracion-continua-t7c1.vercel.app/"
@@ -78,23 +79,23 @@
     "subtitle": "Lo que dicen mis compañeros y clientes sobre trabajar conmigo."
   },
   "Contact": {
-    "title": "Contactame",
-    "subtitle": "¿Tienes algún proyecto en mente o te gustaría colaborar? ¡No dudes en contactarme",
-    "infoTitle": "Informacion de Contacto",
+    "title": "Contáctame",
+    "subtitle": "¿Tienes algún proyecto en mente o te gustaría colaborar? ¡No dudes en contactarme!",
+    "infoTitle": "Información de Contacto",
     "nameLabel": "Tu Nombre",
-    "emailLabel": "Tu email",
+    "emailLabel": "Tu Email",
     "projectLabel": "Proyecto",
     "messageLabel": "Mensaje",
     "sendButton": "Enviar Mensaje",
-    "namePlaceholder": ".........",
-    "emailPlaceholder": ".........",
-    "projectPlaceholder": ".........",
-    "messagePlaceholder": "........."
+    "namePlaceholder": "Escribe tu nombre...",
+    "emailPlaceholder": "tu@email.com",
+    "projectPlaceholder": "Tipo de proyecto...",
+    "messagePlaceholder": "Cuéntame más sobre tu idea..."
   },
   "Footer": {
     "rights": "Todos los derechos reservados.",
-    "links": "Enlaces Rápidos",
-    "social": "Redes Sociales",
-    "madeWith": "Hecho con ❤️ por Julian Mera"
+    "links": "Enlaces rápidos",
+    "social": "Redes sociales",
+    "madeWith": "Hecho con ❤️ por Julián Mera"
   }
 }

@@ -85,7 +85,7 @@ export default function CVPage() {
               <div className="relative z-10 flex flex-col items-center md:items-start md:flex-row gap-8">
                 <div className="w-48 h-64 bg-slate-200 border-4 border-black shrink-0 relative overflow-hidden contrast-125">
                   <Image
-                    src="/images/profile2.jpeg"
+                    src="/images/profile3.jpeg"
                     alt="Julian Mera"
                     fill
                     className="object-cover"

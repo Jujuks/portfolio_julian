@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Laptop, Palette, Database, Cloud, BarChart, Settings } from "lucide-react";
+import { 
+  Laptop, Palette, Database, Cloud, BarChart, Settings, 
+  Code2, Cpu, Layers, Layout, Box, Activity, 
+  Server, Hash, Zap, Globe, Terminal, 
+  LineChart, PieChart, Calculator, Wrench 
+} from "lucide-react";
 import { useTranslations } from 'next-intl';
 
 const skillCategories = [
@@ -9,56 +14,54 @@ const skillCategories = [
     title: "Frontend", 
     icon: Laptop, 
     skills: [
-      { name: "Next.js", level: 85 },
-      { name: "React", level: 85 },
-      { name: "TypeScript", level: 80 }
+      { name: "Next.js", icon: Code2 },
+      { name: "React", icon: Cpu },
+      { name: "TypeScript", icon: Layers }
     ]
   },
   { 
-    title: "Styling & UI/UX", 
+    title: "Styling & UI", 
     icon: Palette, 
     skills: [
-      { name: "Tailwind CSS", level: 90 },
-      { name: "CSS3/SASS", level: 85 },
-      { name: "UI/UX Design", level: 80 }
+      { name: "Tailwind CSS", icon: Layout },
+      { name: "CSS3/SASS", icon: Box },
+      { name: "UI/UX Design", icon: Activity }
     ]
   },
   { 
-    title: "Backend & Languages", 
+    title: "Backend", 
     icon: Database, 
     skills: [
-      { name: "Python", level: 85 },
-      { name: "Node.js", level: 75 },
-      { name: "REST APIs", level: 75 }
+      { name: "Python", icon: Hash },
+      { name: "Node.js", icon: Server },
+      { name: "REST APIs", icon: Database }
     ]
   },
   { 
     title: "Cloud & DevOps", 
     icon: Cloud, 
     skills: [
-      { name: "AWS Lambda", level: 75 },
-      { name: "AWS IAM", level: 70 },
-      { name: "Vercel", level: 85 },
-      { name: "Git/GitHub", level: 90 }
+      { name: "AWS Lambda", icon: Zap },
+      { name: "Vercel", icon: Globe },
+      { name: "Git/GitHub", icon: Terminal }
     ]
   },
   { 
     title: "Data & Analysis", 
     icon: BarChart, 
     skills: [
-      { name: "Statistical Analysis", level: 85 },
-      { name: "Data Visualization", level: 80 },
-      { name: "Linear Algebra", level: 85 }
+      { name: "Statistical Analysis", icon: LineChart },
+      { name: "Data Visualization", icon: PieChart },
+      { name: "Linear Algebra", icon: Calculator }
     ]
   },
   { 
-    title: "Tools & Architecture", 
+    title: "Tools", 
     icon: Settings, 
     skills: [
-      { name: "ArchiMate", level: 80 },
-      { name: "System Architecture", level: 75 },
-      { name: "VS Code", level: 90 },
-      { name: "Figma", level: 75 }
+      { name: "ArchiMate", icon: Wrench },
+      { name: "System Architecture", icon: Settings },
+      { name: "VS Code", icon: Code2 }
     ]
   },
 ];
@@ -94,22 +97,13 @@ export default function SkillSection() {
                 <h3 className="text-lg font-bold text-card-foreground">{category.title}</h3>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {category.skills.map(skill => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-bold text-card-foreground">{skill.name}</span>
-                      <span className="text-[10px] font-bold text-muted-foreground">{skill.level}%</span>
+                  <div key={skill.name} className="flex items-center gap-3 p-3 rounded-2xl bg-muted/30 hover:bg-accent/5 transition-colors group">
+                    <div className="p-2 bg-background rounded-xl text-accent group-hover:scale-110 transition-transform">
+                      <skill.icon size={18} />
                     </div>
-                    <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
-                      <motion.div 
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.5 }}
-                        className="h-full bg-accent rounded-full"
-                      />
-                    </div>
+                    <span className="text-sm font-bold text-card-foreground">{skill.name}</span>
                   </div>
                 ))}
               </div>

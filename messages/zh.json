@@ -10,6 +10,7 @@
     "language": "语言"
   },
   "Hero": {
+    "welcome": "欢迎访问我的作品集",
     "greeting": "你好，我是 Julian Mera",
     "subtitle": "软件工程学生",
     "location": "Pasto, 哥伦比亚",
@@ -86,10 +87,10 @@
     "projectLabel": "项目",
     "messageLabel": "留言",
     "sendButton": "发送消息",
-    "namePlaceholder": ".........",
-    "emailPlaceholder": ".........",
-    "projectPlaceholder": ".........",
-    "messagePlaceholder": "........."
+    "namePlaceholder": "输入您的姓名...",
+    "emailPlaceholder": "your@email.com",
+    "projectPlaceholder": "项目类型...",
+    "messagePlaceholder": "告诉我们更多关于您的想法..."
   },
   "Footer": {
     "rights": "版权所有。",
